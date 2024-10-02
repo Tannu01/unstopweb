@@ -1,0 +1,233 @@
+
+/* Navbar Styling */
+nav{
+  background-color: #000;
+}
+#nav-section .navbar-dark .navbar-brand {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+#nav-section .navbar-brand .logo-img {
+  width: 100%;
+  height: 60px;
+}
+
+#nav-section .get-btn {
+  padding: 2px 2px;
+} 
+#nav-section .navbar-dark .nav-link {
+  color: #fff !important;
+}
+#nav-section .nav-item a{
+  font-size: large;
+}
+#nav-section .nav-item a:is(:link, :active, :visited).active {
+  border-bottom: 2px solid rgb(242, 226, 81);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 200px; /* Ensure it expands to full width on small screens */
+    height: 100vh; /* Ensure it takes full height */
+    background-color: #181818; /* Match the navbar background color */
+    z-index: 999; /* Ensure it's above other content */
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-nav {
+    flex-direction: column; /* Stack the items vertically */
+  }
+  .nav-link {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+/* Contact Us Section Styling */
+#contact-us {
+    background-color: #f8f9fa;
+  }
+  
+  #contact-us h2, #contact-us p {
+    color: #333;
+  }
+  
+
+ 
+  #contact-us {
+    position: relative; /* Make sure this is relatively positioned */
+  }
+  
+  #contact-us .contact-box {
+    position: absolute; 
+    width: 600px;
+    height: 500px;
+    top: 160px;
+    left: 50%; /* Center the box horizontally */
+    transform: translateX(-50%); /* Center the box */
+    background-color: #47b2e4;
+    border-radius: 4px;
+    border: 1px solid #095c83;
+    box-shadow: 12px 12px 14px rgba(0, 0, 0, 0.5); /* Use rgba for box-shadow */
+  }
+  
+  #contact-us .contact-form {
+    position: relative;
+    z-index: 10; /* Ensure this is on top */
+  }
+  
+  #contact-us .google-location {
+    margin-top: 10px;
+    position: relative; /* Change to absolute to overlap correctly */
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+  
+ 
+  
+
+
+
+
+  
+#footer {
+  background-color: white;
+  color: black;
+}
+#footer .social-links a:hover {
+  color: rgb(6, 70, 159);
+  
+}
+#footer .social-links i {
+  color: #47b2e4;
+  font-size: 1.1rem;
+}
+#footer .social-links i:hover {
+  color: #47b2e4;
+  font-size: 1.3rem;
+  color: rgb(6, 70, 159);
+}
+#footer .social-links a {
+  border: 1px dashed #47b2e4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Ensure the anchor is treated as a block */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .social-links {
+  display: flex;
+}
+
+#footer .last-footer {
+  border-top: 1px dashed #fafafa;
+  background-color: #000;
+  color: #fff;
+}
+#footer .first-footer {
+  border-bottom: 1px dashed #2e2d2d;
+}
+#footer .footer-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+#footer .contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .contact p i {
+  font-size: 20px;
+}
+#footer .contact p a {
+  text-decoration: none;
+}
+#footer .contact p:hover {
+  color: rgb(3, 41, 94);
+  transform: translate(10px, 0);
+}
+#footer .contact p .mail-para {
+  display: block;
+}
+#footer .quick-links p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .quick-links p i {
+  font-size: 16px;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+#footer .quick-links p:hover {
+  color: rgb(54, 87, 134);
+  transform: translate(10px, 0);
+}
+#footer .contact i:hover {
+  color: rgb(6, 70, 159);
+}
+#footer .quick-links i:hover {
+  color: rgb(6, 70, 159);
+}
+#footer p i {
+  color: #47b2e4;
+}
+
+@media (max-width: 768px) {
+  #footer .first-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .social-links {
+    margin-top: 1rem; /* Space between the social links and the text */
+  }
+
+  #footer .container {
+    padding: 0 1rem; /* Add padding for better spacing */
+  }
+
+  #footer .row {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the items */
+  }
+
+  #footer .col-md-5,
+  #footer .col-md-3 {
+    margin-bottom: 1.5rem; /* Add space between stacked columns */
+    text-align: center; /* Center text for better readability */
+  }
+
+  #footer .quick-links p,
+  #footer .contact p {
+    justify-content: center;
+  
+  }
+
+  #footer .contact p i,
+  #footer .quick-links p i {
+    font-size: 18px; /* Adjust icon size if needed */
+  }
+}
+
+ 

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: white;
+ 
+}
+.space{
+  padding: 4rem 2rem;
+}
+
+
+
+/* Navbar Styling */
+nav{
+  background-color: #000;
+}
+#nav-section .navbar-dark .navbar-brand {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+#nav-section .navbar-brand .logo-img {
+  width: 100%;
+  height: 60px;
+}
+
+#nav-section .get-btn {
+  padding: 2px 2px;
+} 
+#nav-section .navbar-dark .nav-link {
+  color: #fff !important;
+}
+#nav-section .nav-item a{
+  font-size: large;
+}
+#nav-section .nav-item a:is(:link, :active, :visited).active {
+  border-bottom: 2px solid rgb(242, 226, 81);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 200px; /* Ensure it expands to full width on small screens */
+    height: 100vh; /* Ensure it takes full height */
+    background-color: #181818; /* Match the navbar background color */
+    z-index: 999; /* Ensure it's above other content */
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-nav {
+    flex-direction: column; /* Stack the items vertically */
+  }
+  .nav-link {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+/* blog section */
+
+#blog .title {
+    text-align: center;
+    padding:  20px 0;
+    display: inline-block;
+  }
+  #blog .title .subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #9176ff;
+    letter-spacing: 2.88px;
+    margin-bottom: 0;
+  }
+  #blog  .title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    color: #001A3D;
+  }
+  #blog  .title p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4D5B68;
+    line-height: 1.9rem;
+    
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blog-card .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    color: #001A3D;
+  }
+  
+  .blog-card p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .blog-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hover effects */
+  .blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .blog-card:hover::before {
+    opacity: 0.5;
+  }
+  
+  .blog-card:hover .blog-content {
+    color: #fff;
+  }
+  
+  
+  
+#footer {
+  background-color: white;
+  color: black;
+}
+#footer .social-links a:hover {
+  color: rgb(6, 70, 159);
+  
+}
+#footer .social-links i {
+  color: #47b2e4;
+  font-size: 1.1rem;
+}
+#footer .social-links i:hover {
+  color: #47b2e4;
+  font-size: 1.3rem;
+  color: rgb(6, 70, 159);
+}
+#footer .social-links a {
+  border: 1px dashed #47b2e4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Ensure the anchor is treated as a block */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .social-links {
+  display: flex;
+}
+
+#footer .last-footer {
+  border-top: 1px dashed #fafafa;
+  background-color: #000;
+  color: #fff;
+}
+#footer .first-footer {
+  border-bottom: 1px dashed #2e2d2d;
+}
+#footer .footer-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+#footer .contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .contact p i {
+  font-size: 20px;
+}
+#footer .contact p a {
+  text-decoration: none;
+}
+#footer .contact p:hover {
+  color: rgb(3, 41, 94);
+  transform: translate(10px, 0);
+}
+#footer .contact p .mail-para {
+  display: block;
+}
+#footer .quick-links p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#footer .quick-links p i {
+  font-size: 16px;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+#footer .quick-links p:hover {
+  color: rgb(54, 87, 134);
+  transform: translate(10px, 0);
+}
+#footer .contact i:hover {
+  color: rgb(6, 70, 159);
+}
+#footer .quick-links i:hover {
+  color: rgb(6, 70, 159);
+}
+#footer p i {
+  color: #47b2e4;
+}
+
+@media (max-width: 768px) {
+  #footer .first-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .social-links {
+    margin-top: 1rem; /* Space between the social links and the text */
+  }
+
+  #footer .container {
+    padding: 0 1rem; /* Add padding for better spacing */
+  }
+
+  #footer .row {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the items */
+  }
+
+  #footer .col-md-5,
+  #footer .col-md-3 {
+    margin-bottom: 1.5rem; /* Add space between stacked columns */
+    text-align: center; /* Center text for better readability */
+  }
+
+  #footer .quick-links p,
+  #footer .contact p {
+    justify-content: center;
+  
+  }
+
+  #footer .contact p i,
+  #footer .quick-links p i {
+    font-size: 18px; /* Adjust icon size if needed */
+  }
+}
