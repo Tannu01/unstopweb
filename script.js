@@ -41,3 +41,20 @@ Services();
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const activePage = window.location.pathname; 
+  const navlinks = document.querySelectorAll('nav a'); 
+
+  navlinks.forEach(link => {
+    
+      if (link.href === window.location.origin + activePage) {
+          link.classList.add('active'); 
+      } else {
+          link.classList.remove('active'); 
+      }
+  });
+});
+
+

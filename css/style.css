@@ -32,19 +32,19 @@ nav{
 #nav-section .nav-item a{
   font-size: large;
 }
-#nav-section .nav-item a:is(:link, :active, :visited).active {
+/* #nav-section .nav-item a:is(:link, :active, :visited).active {
   border-bottom: 2px solid rgb(242, 226, 81);
-}
+} */
 
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
     top: 75px;
     left: 0;
-    width: 200px; /* Ensure it expands to full width on small screens */
+    width: 200px; 
     height: 100vh; 
     background-color: #181818; 
-    z-index: 999; /* Ensure it's above other content */
+    z-index: 999; 
   }
 
   .navbar-toggler {
@@ -53,7 +53,7 @@ nav{
     right: 15px;
   }
   .navbar-nav {
-    flex-direction: column; /* Stack the items vertically */
+    flex-direction: column; 
   }
   .nav-link {
     padding: 15px;
@@ -580,14 +580,14 @@ text-align: center;
     position: relative;
   }
   
-  /* Center the text vertically and horizontally */
+
   .content {
     margin-top: 6%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    padding: 20px; /* Add padding for smaller screens */
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
     opacity: 0;
     animation: fadeIn 2s ease-in-out 0s forwards alternate;
   }
@@ -694,3 +694,5 @@ text-align: center;
     }
   }
   
+
+ 
